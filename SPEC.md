@@ -16,3 +16,15 @@
 - index.html — the whole app (HTML/CSS/JS in one file, sample data in memory, hash routes like #p/p1/fin, #costs/p1/0).
 - jobflow-costs-template.csv — CSV import format.
 - screenshots/ — desktop (1280) and phone (390) captures.
+
+## Step workflow (inside each job)
+| Step | Who | Fields | Can't move on until |
+|---|---|---|---|
+| 1 Request | Office | what's needed, trade, requested by, urgency, owner, photos | an owner is assigned |
+| 2 Details | Estimator | site visit date, measurements/scope, photos/plans | scope is written |
+| 3 Estimate | Estimator | labor, materials, subs, markup % (live client price), sent | estimate is sent |
+| 4 Approval | Client | Signed / Changes requested (→ back to Estimate as new version) | client signed |
+| 5 Deposit | Office | amount (defaults 30%), method, date | deposit received |
+| 6 Schedule | Owner | crew, start date, materials ordered, permit, crew confirmed | crew confirmed; permit waiting = Blocked |
+| 7 Handoff | Crew lead | accepted, daily notes, photos, work complete | work complete |
+| 8 Done | Owner | walkthrough, punch list, final invoice, paid | closed |
