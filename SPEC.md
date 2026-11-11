@@ -28,3 +28,13 @@
 | 6 Schedule | Owner | crew, start date, materials ordered, permit, crew confirmed | crew confirmed; permit waiting = Blocked |
 | 7 Handoff | Crew lead | accepted, daily notes, photos, work complete | work complete |
 | 8 Done | Owner | walkthrough, punch list, final invoice, paid | closed |
+
+## Phases & tasks
+- Each project: 7 phases → stages → tasks, % done per phase/stage, late flags, + Task (optionally as a job).
+- Phases view (accordion) or List view (one table) with filters Open / Late / Done / All.
+
+## Stage handoff & service level
+- Finishing a stage = sign off ("complete and correct") + choose who takes the next stage (or Myself) + note.
+- The job then waits for that person to Accept (or Send back if the previous stage isn't complete); it is locked until then.
+- Not accepted: manager is messaged at 4h, owner at 24h, and it appears in Needs attention (times to be confirmed by client).
+- Every sign-off, accept and send-back is logged in History.
