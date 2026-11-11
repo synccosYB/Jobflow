@@ -4,6 +4,8 @@ Clickable HTML prototype of a contractor project app: big projects with small jo
 
 - `index.html` — the whole prototype in one file (no build step, no backend). Open it in a browser.
 - `jobflow-costs-template.csv` — CSV format for bulk cost import (Date, Type, Description, Qty, Unit price, Vendor).
+- `SPEC.md` — the client's requirements as understood.
+- `screenshots/` — screen captures.
 - Live: https://jobflow-proto.sites.tab.bot/
 
 All data is sample data held in the page; changes reset on reload.
